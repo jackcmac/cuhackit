@@ -44,7 +44,7 @@ def load_data():
     #f.close()
     #g.close()
     #h.close()
-    mndata = MNIST('./gzip')
+    mndata = MNIST('./dataset')
     mndata.gz = True
     mndata.select_emnist('letters')
     
