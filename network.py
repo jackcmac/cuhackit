@@ -126,10 +126,7 @@ class Network(object):
                         for (x, y) in test_data]
         vals = []
         for (x, y) in test_results:
-            print y
-            vals.append(int(x == y[0][x]))
-        for i in vals:
-            print i
+            vals.append(int(x == y[x]))
         return np.sum(vals)
 
     def cost_derivative(self, output_activations, y):
